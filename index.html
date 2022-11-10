@@ -374,16 +374,16 @@
                 </ul>
             </div>
             <div class="footer-box3">
-                <form>
+                <form class="form-subscribe">
                     <div class="form-field">
                         <label for="email">
                             Підпишіться на розсилку
                         </label>
                         <input type="email" name="email" id="email" placeholder="E-mail">
                     </div>
-                    <button type="submit">Підписатися
-                        <svg>
-                            <use href=""></use>
+                    <button type="submit" class="btn-subscribe">Підписатися
+                        <svg class=icon-send>
+                            <use href="./images/symbol-defs.svg#icon-send"></use>
                         </svg>
                     </button>
                 </form>
@@ -397,42 +397,63 @@
                     <use href="./images/symbol-defs.svg#icon-close"></use>
                 </svg>
             </button>
-            <form>
-                <div role="group" class="group">
-                    <h1>Залиште свої дані, ми вам передзвонимо</h1>
-                    <ul class="customer-info">
-                        <li>
-                            <label for="name" value="Ім'я">
+            <form class="form">
+                <div role="group" class="group" aria-labelledby="contact-details-head">
+                    <p id="contact-details-head">Залиште свої дані, ми вам передзвонимо</p> 
+                    <ul class="group-list">
+                        <li class="item">
+                            <label for="name">Ім'я
                             </label>
-                            <input type="text" name="name" id="name">
+                            <input type="text" name="name" id="name" class="form-input" required>
+                            <svg class="icon-modal">
+                                <use href="./images/symbol-defs.svg#icon-person"></use>
+                            </svg>
                         </li>
-                        <li>
-                            <label for="tel" value="Телефон">
+                        <li class="item">
+                            <label for="tel">Телефон
                             </label>
-                            <input type="tel" name="tel" id="tel">
+                            <input type="tel" name="tel" id="tel" class="form-input" required>
+                            <svg class="icon-modal">
+                                <use href="./images/symbol-defs.svg#icon-phone"></use>
+                            </svg>
                         </li>
-                        <li>
-                            <label for="email" value="Пошта">
+                        <li class="item">
+                            <label for="email">Пошта
                             </label>
-                            <input type="email" name="email" id="email">
+                            <input type="email" name="email" id="email" class="form-input" required>
+                            <svg class="icon-modal">
+                                <use href="./images/symbol-defs.svg#icon-email"></use>
+                            </svg>
                         </li>
-                        <li>
-                            <label for="comment" value="Коментар">
+                        <li class="item">
+                            <label for="comment">Коментар
                             </label>
-                            <input type="text" 
+                            <input type="textarea"  
                             name="comment" 
                             id="comment" 
                             placeholder="Введіть текст"
-                            rows="8">
+                            rows="4"
+                            class="form-input" required>
                         </li>
-                        <li>
+                        <li class="item-checkbox">
+                            <input type="checkbox" name="policy" id="policy" required>
+
                             <label for="policy"> Погоджуюся з розсилкою та приймаю <a>Умови договору</a>
+                                <span class="checkbox-icon">
+                                    <svg class="icon-check">
+                                        <use href="./images/symbol-defs.svg#icon-check"></use>
+                                    </svg>
+                                </span>
+                            
                             </label>
-                            <input type="checkbox" name="policy" id="policy">
                         </li>
                     </ul>
-                    <button type="submit" class="btn-submit">Відправити</button>
+            
+                    <button type="submit" class="btn-submit">Відправити
+
+                    </button>
                 </div>
+                
             </form>
         </div>
     </div>
