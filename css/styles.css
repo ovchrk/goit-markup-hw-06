@@ -630,12 +630,13 @@ ul {
 .form-field input {
     outline: none;
     padding: 15px 0 15px 16px;
-    height: 40px;
+    height: 50px;
     text-align: left;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: transparent;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .form-field input::placeholder {
@@ -853,6 +854,7 @@ ul {
     padding: 0;
     fill: #000000;
     transition: fill 250ms var(--timing-function);
+    padding: 5px;
 }
 
 .btn-close:hover {
@@ -879,7 +881,7 @@ ul {
     margin-bottom: 4px;
     font-weight: 400;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 1.16;
     color: #757575;
 }
 .group-list input {
@@ -928,6 +930,10 @@ ul {
     align-items: center;
     text-align: center;
     margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
     
 }
 .item-checkbox input {
@@ -946,7 +952,7 @@ ul {
 }
 .checkbox-icon {
     position: absolute;
-    top: -2px;
+    top: 4px;
     left: -26px;
     box-sizing: content-box;
     background-image: url(../images/icon-check-empty.svg);
